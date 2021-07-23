@@ -16,9 +16,10 @@ main() {
 
   final List<String> personasFinal = ['Juan', 'Jesus', ' Fernando'];
   List<String> personasConst = const ['Juan', 'Jesus', ' Fernando'];
-
+  
+  // Para datos no primitivos const ya no permite agregar datos mediante funciones, en cambio con final si es válido
   personasFinal.add('Maria');
-  personasConst.add('Maria');
+  personasConst.add('Maria');//Manda error
 
   // print(personasConst);
 }
